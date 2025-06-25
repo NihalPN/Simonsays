@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="game-container">
+        <h1 class="text-4xl font-bold mb-6 text-emerald-400">Simon Says</h1>
+
+        <div class="score-display" id="scoreDisplay">Level: 0</div>
+
+        <div class="game-board" id="gameBoard">
+            <div class="game-button green" id="button-0"></div>
+            <div class="game-button red" id="button-1"></div>
+            <div class="game-button yellow" id="button-2"></div>
+            <div class="game-button blue" id="button-3"></div>
+        </div>
+
+        <button class="start-button" id="startButton">Start Game</button>
+
+        <div class="message-box" id="messageBox"></div>
+
+        <!-- Audio elements for each button sound -->
+        <audio id="sound-0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+        <audio id="sound-1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+        <audio id="sound-2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+        <audio id="sound-3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
